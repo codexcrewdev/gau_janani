@@ -1,0 +1,28 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT COLORS (Design System) */
+:root {
+  --primary: #6b8e23;
+  --background: #f5f0e6;
+  --text: #1a1a1a;
+  --white: #ffffff;
+}
+
+/* BODY */
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: var(--background);
+  color: var(--text);
+}
+
+/* GLOBAL CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}

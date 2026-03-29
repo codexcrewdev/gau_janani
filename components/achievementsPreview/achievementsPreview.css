@@ -1,0 +1,63 @@
+.achievements {
+  background: #f9f6ef;
+  padding: 70px 0;
+  text-align: center;
+}
+
+/* TITLE */
+.title {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+/* IMAGES */
+.grid img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.grid img:hover {
+  transform: scale(1.03);
+}
+
+/* BUTTON */
+.center {
+  margin-top: 25px;
+}
+
+.view-all {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .title {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+}

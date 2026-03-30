@@ -20,7 +20,7 @@ export default function Navbar() {
         <div className={`links ${open ? "active" : ""}`}>
           <a href="#">Home</a>
           <a href="#">About</a>
-          <a href="#">Mission</a>
+          <a href="#">Products</a>
           <a href="#">Gallery</a>
           <a href="#">Contact</a>
         </div>

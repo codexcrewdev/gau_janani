@@ -55,43 +55,6 @@
   opacity: 0.9;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-  outline: none;
-}
-
-/* INPUT FOCUS */
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: var(--primary);
-}
-
-/* BUTTON */
-.contact-form button {
-  background: var(--primary);
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 6px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: all 0.25s ease;
-}
-
-.contact-form button:hover {
-  transform: translateY(-2px);
-  opacity: 0.9;
-}
 
 /* MAP */
 .contact-map iframe {
@@ -138,12 +101,4 @@
     min-height: 450px;
   }
 
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 16px;
-  }
-
-  .contact-form button {
-    font-size: 16px;
-  }
 }

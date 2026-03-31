@@ -25,7 +25,7 @@ export default function ContactSection() {
 
               <p>📍 Janani Farms, Kukkehalli, Karnataka</p>
               <p>📞 +91 9663439728</p>
-              <p>✉️ example@gmail.com</p>
+              <p>✉️ gaujanani.info@gmail.com</p>
 
               <a
                 href="https://wa.me/919663439728?text=Hi%20I%20am%20interested%20in%20your%20products"
@@ -36,36 +36,7 @@ export default function ContactSection() {
                 Chat on WhatsApp
               </a>
             </div>
-
-            {/* FORM */}
-            <form
-              className="contact-form"
-              onSubmit={(e) => {
-                e.preventDefault();
-                alert("Message sent! (You can connect backend later)");
-              }}
-            >
-              <input
-                type="text"
-                placeholder="Your Name"
-                required
-              />
-
-              <input
-                type="email"
-                placeholder="Your Email"
-                required
-              />
-
-              <textarea
-                placeholder="Your Message"
-                rows={4}
-                required
-              />
-
-              <button type="submit">Send Message</button>
-            </form>
-
+            
           </div>
 
           {/* RIGHT SIDE - MAP */}

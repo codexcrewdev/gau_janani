@@ -18,10 +18,10 @@ export default function Navbar() {
         </div>
 
         <div className={`links ${open ? "active" : ""}`}>
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Products</a>
-          <a href="#">Gallery</a>
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/products">Products</a>
+          <a href="/gallery">Gallery</a>
           <a href="/contact">Contact</a>
         </div>
 

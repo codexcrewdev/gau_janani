@@ -41,6 +41,7 @@
   padding: 10px 16px;
   border: none;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .secondary {
@@ -49,6 +50,7 @@
   color: white;
   padding: 10px 16px;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 /* TABLET */

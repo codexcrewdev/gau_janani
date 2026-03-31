@@ -40,6 +40,7 @@
   color: white;
   padding: 10px 16px;
   border: none;
+  border-radius: 6px;
 }
 
 .secondary {
@@ -47,6 +48,7 @@
   border: 1px solid white;
   color: white;
   padding: 10px 16px;
+  border-radius: 6px;
 }
 
 /* TABLET */

@@ -26,9 +26,9 @@ export default function Footer() {
                 {/* RIGHT - CONTACT */}
                 <div className="footer-right">
                     <h3>Contact</h3>
-                    <p>📍 Your Farm Location</p>
-                    <p>📞 +91 XXXXXXXX</p>
-                    <p>✉️ example@gmail.com</p>
+                    <p>📍 Janani Farms, Kukkehali - 576124</p>
+                    <p>📞 +91 9663439728</p>
+                    <p>✉️ gaujanani.info@gmail.com</p>
 
                     <div className="socials">
                         <a href="https://instagram.com/gau_janani" target="_blank" rel="noopener noreferrer">

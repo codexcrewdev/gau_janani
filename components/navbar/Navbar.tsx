@@ -22,7 +22,7 @@ export default function Navbar() {
           <a href="#">About</a>
           <a href="#">Products</a>
           <a href="#">Gallery</a>
-          <a href="#">Contact</a>
+          <a href="/contact">Contact</a>
         </div>
 
         <div className="menu" onClick={() => setOpen(!open)}>

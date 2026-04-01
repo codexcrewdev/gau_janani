@@ -21,12 +21,12 @@ export default function ContactSection() {
               <h3>Get in Touch</h3>
 
               <p>📍 Your Business Location</p>
-              <p>📞 +91 XXXXXXXX</p>
+              <p>📞 +91 9663439728</p>
               <p>✉️ example@gmail.com</p>
 
               {/* WhatsApp CTA */}
               <a
-                href="https://wa.me/91XXXXXXXXXX?text=Hi%20I%20would%20like%20to%20connect"
+                href="https://wa.me/919663439728?text=Hi%20I%20would%20like%20to%20connect"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="whatsapp-btn"
@@ -35,7 +35,7 @@ export default function ContactSection() {
               </a>
 
               {/* Call Button */}
-              <a href="tel:+91XXXXXXXXXX" className="call-btn">
+              <a href="tel:+919663439728" className="call-btn">
                 Call Now
               </a>
             </div>

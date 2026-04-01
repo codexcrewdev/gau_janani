@@ -7,36 +7,39 @@ export default function ContactSection() {
     <section className="contact section">
       <div className="container">
 
-        {/* TITLE */}
-        <h1 className="contact-title">Get in Touch</h1>
+        <h1 className="contact-title">Contact Us</h1>
         <p className="contact-subtitle">
-          We would love to hear from you. Reach out for visits, products, or any queries.
+          Reach out to us directly for any queries or services.
         </p>
 
-        {/* MAIN LAYOUT */}
         <div className="contact-container">
 
           {/* LEFT SIDE */}
           <div className="contact-left">
 
-            {/* CONTACT INFO */}
             <div className="contact-info">
-              <h3>Contact Details</h3>
+              <h3>Get in Touch</h3>
 
-              <p>📍 Janani Farms, Kukkehalli, Karnataka</p>
-              <p>📞 +91 9663439728</p>
-              <p>✉️ gaujanani.info@gmail.com</p>
+              <p>📍 Your Business Location</p>
+              <p>📞 +91 XXXXXXXX</p>
+              <p>✉️ example@gmail.com</p>
 
+              {/* WhatsApp CTA */}
               <a
-                href="https://wa.me/919663439728?text=Hi%20I%20am%20interested%20in%20your%20products"
+                href="https://wa.me/91XXXXXXXXXX?text=Hi%20I%20would%20like%20to%20connect"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="whatsapp-btn"
               >
                 Chat on WhatsApp
               </a>
+
+              {/* Call Button */}
+              <a href="tel:+91XXXXXXXXXX" className="call-btn">
+                Call Now
+              </a>
             </div>
-            
+
           </div>
 
           {/* RIGHT SIDE - MAP */}

@@ -47,7 +47,7 @@
 /* WHATSAPP BUTTON */
 .whatsapp-btn {
   display: inline-block;
-  margin-top: 12px;
+  margin: 12px 15px 0 0;
   background: #25d366;
   color: white;
   padding: 10px 16px;

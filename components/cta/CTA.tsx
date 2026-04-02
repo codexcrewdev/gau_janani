@@ -1,4 +1,5 @@
 import "./cta.css";
+import Link from "next/link";
 
 export default function CTA() {
   return (
@@ -15,8 +16,12 @@ export default function CTA() {
         </p>
 
         <div className="cta-buttons">
-          <button className="primary">Order Now</button>
-          <button className="secondary">Visit Farm</button>
+          <Link href="/products">
+            <button className="primary">Order Now</button>
+          </Link> 
+          <Link href="/contact">
+            <button className="secondary">Visit Farm</button>
+          </Link>
         </div>
       </div>
 

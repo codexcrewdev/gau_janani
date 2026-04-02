@@ -1,4 +1,5 @@
 import "./hero.css";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -18,7 +19,9 @@ export default function Hero() {
 
         <div className="buttons">
           <button className="primary">Visit Farm</button>
-          <button className="secondary">Contact</button>
+          <Link href="/contact">
+            <button className="secondary">Contact</button>
+          </Link>
         </div>
       </div>
     </section>

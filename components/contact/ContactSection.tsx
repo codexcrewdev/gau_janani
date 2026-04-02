@@ -20,9 +20,9 @@ export default function ContactSection() {
             <div className="contact-info">
               <h3>Get in Touch</h3>
 
-              <p>📍 Your Business Location</p>
+              <p>📍 Janani Farms, Kukkehalli, Udupi - 576124</p>
               <p>📞 +91 9663439728</p>
-              <p>✉️ example@gmail.com</p>
+              <p>✉️ gaujanani.info@gmail.com</p>
 
               {/* WhatsApp CTA */}
               <a

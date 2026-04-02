@@ -35,23 +35,43 @@ export default function AboutPage() {
                     </div>
 
                 </div>
-                <div className="our-story">
-                    <h2>Our Story</h2>
+                <div className="our-story section">
 
-                        <p>
-                            Our journey began with a simple vision — to build something that
-                            connects people with nature, tradition, and a healthier lifestyle.
-                        </p>
+                    {/* HEADING */}
+                    <h2 className="story-heading">Our Story</h2>
 
-                        <p>
-                            Over time, we have grown into a community-driven initiative focused
-                            on sustainability, quality, and long-term impact.
-                        </p>
+                    <div className="story-container">
 
-                        <p>
-                            We believe in authenticity, transparency, and delivering real value
-                            to the people we serve.
-                        </p>
+                        {/* LEFT - TEXT */}
+                        <div className="story-text">
+                            <p>
+                                Our journey began with a simple vision — to build something that
+                                connects people with nature, tradition, and a healthier lifestyle.
+                            </p>
+
+                            <p>
+                                Over time, we have grown into a community-driven initiative focused
+                                on sustainability, quality, and long-term impact.
+                            </p>
+
+                            <p>
+                                We believe in authenticity, transparency, and delivering real value
+                                to the people we serve.
+                            </p>
+                        </div>
+
+                        {/* RIGHT - VIDEO */}
+                        <div className="video-container">
+                            <iframe
+                                src="https://www.youtube/embed/L4NfBkQHX5I"
+                                title="Our Story"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            ></iframe>
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>

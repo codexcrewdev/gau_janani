@@ -45,25 +45,65 @@ export default function AboutPage() {
                         {/* LEFT - TEXT */}
                         <div className="story-text">
                             <p>
-                                Our journey began with a simple vision — to build something that
-                                connects people with nature, tradition, and a healthier lifestyle.
+                                The journey of Janani Farms began far away from the fields, during our time working in the Gulf.
                             </p>
 
                             <p>
-                                Over time, we have grown into a community-driven initiative focused
-                                on sustainability, quality, and long-term impact.
+                                During that phase of life, we started facing health issues, including swelling near the rib area. Even after trying treatments, we were not fully satisfied, which made us question our lifestyle and the kind of food we were consuming.
                             </p>
 
                             <p>
-                                We believe in authenticity, transparency, and delivering real value
-                                to the people we serve.
+                                At that point, someone suggested that desi cow milk (A2 milk) could help improve our condition. This led us to explore more about indigenous cows and their importance.
+                            </p>
+
+                            <p>
+                                We began consuming it ourselves and experienced positive changes in our health.
+                            </p>
+
+                            <p>
+                                This experience inspired us to start Janani Farms, with the vision of providing pure, natural A2 milk and promoting the benefits of desi cows to others.
+                            </p>
+
+                            <p>
+                                Around 2017-2018, we made the decision to return and start Janani Farms, focusing on indigenous cows. In the beginning, we worked with both Malnad Gidda and Gir cows.
+                            </p>
+
+                            <p>
+                                Initially, we had workers supporting us. However, when they returned to their hometown and did not come back, it created a shortage of workers, making it difficult to manage everything at the same scale.
+                            </p>
+
+                            <p>
+                                During this time, we also received guidance and support from ISKCON, which helped us continue our journey.
+                            </p>
+
+                            <p>
+                                Due to the shortage of workers, maintaining Gir cows became difficult. As a result, we reduced them. Today, we have one Gir cow, and the rest of our farm is centered around the Malnad Gidda cow, which is more suitable for our region and manageable with our setup.
+                            </p>
+
+                            <p>
+                                Over time, we moved away from commercial milk selling and focused on building a natural, self-sustaining system around our cows.
+                            </p>
+
+                            <p>
+                                Along with farming, we also began preparing natural cow-based products using traditional methods. This led to the creation of our brand, Gau Janani — through which we share these products with others.
+                            </p>
+
+                            <p>
+                                What started as a solution for our own health has now become our way of life.
+                            </p>
+
+                            <p>
+                                <strong>
+                                    Having experienced these benefits ourselves, we believe others can benefit in the same way.
+                                    Through Janani Farms and our brand Gau Janani, we aim to share the value of desi cows and natural living with more people.
+                                </strong>
                             </p>
                         </div>
 
                         {/* RIGHT - VIDEO */}
                         <div className="video-container">
                             <iframe
-                                src="https://www.youtube/embed/L4NfBkQHX5I"
+                                src="https://www.youtube+/embed/L4NfBkQHX5I"
                                 title="Our Story"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen

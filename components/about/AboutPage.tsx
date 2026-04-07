@@ -64,7 +64,17 @@ export default function AboutPage() {
                                 This experience inspired us to start Janani Farms, with the vision of providing pure, natural A2 milk and promoting the benefits of desi cows to others.
                             </p>
 
-                            <p>
+                        </div>
+                        
+
+                        {/* RIGHT - VIDEO */}
+                        <div className="video-container">
+                            <iframe width="660" height="560" src="https://www.youtube.com/embed/L4NfBkQHX5I?si=qxoIjQ5kpwd6sKXU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                        </div>
+
+                    </div>
+                    <div className="story-text story-text-2">
+                        <p>
                                 Around 2017-2018, we made the decision to return and start Janani Farms, focusing on indigenous cows. In the beginning, we worked with both Malnad Gidda and Gir cows.
                             </p>
 
@@ -98,18 +108,6 @@ export default function AboutPage() {
                                     Through Janani Farms and our brand Gau Janani, we aim to share the value of desi cows and natural living with more people.
                                 </strong>
                             </p>
-                        </div>
-
-                        {/* RIGHT - VIDEO */}
-                        <div className="video-container">
-                            <iframe
-                                src="https://www.youtube+/embed/L4NfBkQHX5I"
-                                title="Our Story"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                            ></iframe>
-                        </div>
-
                     </div>
 
                 </div>

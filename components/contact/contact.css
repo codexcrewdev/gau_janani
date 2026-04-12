@@ -1,6 +1,6 @@
 /* SECTION BASE */
 .contact {
-  background: #ffffff;
+   background: #f8f6f1;
   padding: 45px 0;
 }
 
@@ -9,13 +9,24 @@
   text-align: center;
   font-size: 26px;
   margin-bottom: 8px;
+  font-size: 32px;
+  font-weight: 600;
 }
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
 
 .contact-subtitle {
   text-align: center;
   font-size: 14px;
   margin-bottom: 30px;
   color: #555;
+  margin-bottom: 40px;
 }
 
 /* MAIN LAYOUT */
@@ -38,11 +49,11 @@
   font-size: 18px;
 }
 
-.contact-info p {
+/* .contact-info p {
   margin-bottom: 6px;
   color: #444;
   font-size: 14px;
-}
+} */
 
 /* WHATSAPP BUTTON */
 .whatsapp-btn {
@@ -55,6 +66,8 @@
   border-radius: 6px;
   font-size: 14px;
   transition: all 0.25s ease;
+  font-weight: 500;
+  letter-spacing: 0.3px;
 }
 
 .whatsapp-btn:hover {
@@ -72,6 +85,7 @@
   text-decoration: none;
   border-radius: 6px;
   font-size: 14px;
+  font-weight: 500;
   transition: all 0.25s ease;
 }
 
@@ -88,6 +102,28 @@
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* CARD STYLE */
+.contact-left,
+.contact-map {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.contact-left:hover,
+.contact-map:hover {
+  transform: translateY(-3px);
+  transition: 0.3s ease;
+}
+
 
 @media (min-width: 768px) {
 
@@ -121,7 +157,7 @@
   }
 
   .contact-map {
-    flex: 1;
+    flex: 1.2;
   }
 
   .contact-map iframe {

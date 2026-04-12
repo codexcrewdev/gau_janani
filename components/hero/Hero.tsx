@@ -8,13 +8,11 @@ export default function Hero() {
 
       <div className="hero-content container">
         <h1>
-          Preserving Desi Cows <br />
-          & Rural Livelihoods
+          Embrace the Sacred Gifts of Gau Matha
         </h1>
 
         <p>
-          Supporting sustainable farming, empowering rural families,
-          and protecting traditional values.
+          Discover the natural benefits of eco-friendly products crafted from indigenous cows. At Gaujanani, we are committed to promoting sustainability and protecting our planet with every creation.
         </p>
 
         <div className="buttons">

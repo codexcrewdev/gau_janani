@@ -14,7 +14,7 @@ export default function AboutPage() {
 
                     {/* IMAGE */}
                     <div className="about-image">
-                        <img src="/images/about.jpg" alt="About" />
+                        <img src="/images/about_main.jpg" alt="About" />
                     </div>
 
                     {/* TEXT */}
@@ -45,27 +45,27 @@ export default function AboutPage() {
                         {/* LEFT - TEXT */}
                         <div className="story-text">
                             <p>
-                                The journey of Janani Farms began far away from the fields, during our time working in the Gulf.
+                                Janani Farms didn't start as a plan. It started as a problem in our own lives.
                             </p>
 
                             <p>
-                                During that phase of life, we started facing health issues, including swelling near the rib area. Even after trying treatments, we were not fully satisfied, which made us question our lifestyle and the kind of food we were consuming.
+                                While working in the Gulf, we began facing health issues - one of them being swelling near the rib area. We tried treatments, but nothing felt completely right. That's when we started questioning our lifestyle, especially the kind of food we were consuming every day.
                             </p>
 
                             <p>
-                                At that point, someone suggested that desi cow milk (A2 milk) could help improve our condition. This led us to explore more about indigenous cows and their importance.
+                                Around that time, someone suggested trying desi cow milk (A2 milk). We didn't think much of it at first, but we decided to give it a try. Slowly, as we continued, we could actually feel a difference in our health.
                             </p>
 
                             <p>
-                                We began consuming it ourselves and experienced positive changes in our health.
+                                That experience stayed with us.
                             </p>
 
                             <p>
-                                This experience inspired us to start Janani Farms, with the vision of providing pure, natural A2 milk and promoting the benefits of desi cows to others.
+                                It made us curious about indigenous cows and the role they play - not just in farming, but in everyday well-being. What started as curiosity soon became something deeper.
                             </p>
 
                         </div>
-                        
+
 
                         {/* RIGHT - VIDEO */}
                         <div className="video-container">
@@ -75,39 +75,43 @@ export default function AboutPage() {
                     </div>
                     <div className="story-text story-text-2">
                         <p>
-                                Around 2017-2018, we made the decision to return and start Janani Farms, focusing on indigenous cows. In the beginning, we worked with both Malnad Gidda and Gir cows.
-                            </p>
+                            Around 2017-2018, we made the decision to come back and start Janani Farms.
+                        </p>
 
-                            <p>
-                                Initially, we had workers supporting us. However, when they returned to their hometown and did not come back, it created a shortage of workers, making it difficult to manage everything at the same scale.
-                            </p>
+                        <p>
+                            In the beginning, we had both Gir and Malnad Gidda cows, and with the help of workers, we were managing things well. But when the workers left and didn't return, it became difficult to continue at the same scale. That phase wasn't easy - it forced us to slow down and rethink everything.
+                        </p>
 
-                            <p>
-                                During this time, we also received guidance and support from ISKCON, which helped us continue our journey.
-                            </p>
+                        <p>
+                            During this time, we also received guidance and support from ISKCON, which helped us stay steady and keep going.
+                        </p>
 
-                            <p>
-                                Due to the shortage of workers, maintaining Gir cows became difficult. As a result, we reduced them. Today, we have one Gir cow, and the rest of our farm is centered around the Malnad Gidda cow, which is more suitable for our region and manageable with our setup.
-                            </p>
+                        <p>
+                            Gradually, we shifted our focus. The Malnad Gidda cow, being native to our region and easier to manage in our conditions, became central to our farm. Today, we have one Tharparkar, and the rest are Malnad Gidda.
+                        </p>
 
-                            <p>
-                                Over time, we moved away from commercial milk selling and focused on building a natural, self-sustaining system around our cows.
-                            </p>
+                        <p>
+                            Over time, our approach also changed.
+                        </p>
 
-                            <p>
-                                Along with farming, we also began preparing natural cow-based products using traditional methods. This led to the creation of our brand, Gau Janani — through which we share these products with others.
-                            </p>
+                        <p>
+                            We moved away from commercial milk selling and started focusing more on creating a natural, self-sustaining system around our cows. Along with that, we began making traditional cow-based products, using methods we trusted.
+                        </p>
 
-                            <p>
-                                What started as a solution for our own health has now become our way of life.
-                            </p>
+                        <p>
+                            That's how Gau Janani came into the picture.
+                        </p>
 
-                            <p>
-                                <strong>
-                                    Having experienced these benefits ourselves, we believe others can benefit in the same way.
-                                    Through Janani Farms and our brand Gau Janani, we aim to share the value of desi cows and natural living with more people.
-                                </strong>
-                            </p>
+                        <p>
+                            <strong>
+                                What began as something personal - just trying to fix our own health - has now become our way of life.
+                            </strong>
+                        </p>
+                        <p>
+                            <strong>
+                                We’ve seen the difference it can make, and we believe others can experience it too. Through Janani Farms and Gau Janani, we’re simply trying to share what we’ve learned and lived.
+                            </strong>
+                        </p>
                     </div>
 
                 </div>

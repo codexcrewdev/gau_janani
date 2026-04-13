@@ -41,6 +41,14 @@ export default function Features() {
         {/* RIGHT CONTENT */}
         <div className="features-content">
 
+          <h2 className="features-heading">
+            Why Choose Gau Janani
+          </h2>
+
+          <p className="features-subtitle">
+            Crafted with purity, rooted in tradition, and trusted for quality.
+          </p>
+
           <div className="features-grid">
             {features.map((item, index) => (
               <div key={index} className="feature-item">

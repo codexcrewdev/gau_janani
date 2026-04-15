@@ -2,7 +2,7 @@
 .products-grid {
   display: grid;
   gap: 20px;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .products-heading {
@@ -37,7 +37,7 @@
 
 .product-image img {
   width: 100%;
-  height: 220px;
+  height: 200px;
   object-fit: cover;
   transition: transform 0.4s ease;
 }

@@ -1,0 +1,116 @@
+/* GRID */
+.products-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+.products-heading {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.products-subtitle {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* CARD */
+.product-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+/* IMAGE */
+.product-image {
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* IMAGE ZOOM */
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+/* CONTENT */
+.product-content {
+  padding: 15px;
+}
+
+/* TITLE */
+.product-content h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* PRICE */
+.price {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* BUTTONS */
+.product-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* VIEW BUTTON */
+.view-btn {
+  flex: 1;
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-btn {
+  flex: 1;
+  text-align: center;
+  padding: 8px;
+  background: #25d366;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+@media (min-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========================= */
+/* DESKTOP */
+/* ========================= */
+@media (min-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .product-image img {
+    height: 240px;
+  }
+}

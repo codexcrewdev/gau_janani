@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import { client } from "../../lib/sanity";
 import ProductsList from "../../components/products/ProductsList";
 import CategoryTabs from "../../components/products/CategoryTabs";

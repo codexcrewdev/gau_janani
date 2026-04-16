@@ -4,6 +4,7 @@ import AchievementsPreview from "@/components/achievementsPreview/AchievementsPr
 import CTA from "@/components/cta/CTA";
 import Mission from "@/components/mission/Mission";
 import Features from "@/components/features/Features";
+import Categories from "@/components/categories/Categories";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutPreview />
       <Mission />
       <Features />
+      <Categories />
       <AchievementsPreview />
       <CTA />
     </>

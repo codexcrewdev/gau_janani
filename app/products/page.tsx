@@ -35,11 +35,11 @@ async function getProducts(category?: string) {
 // 🔹 Fetch categories (ADD THIS)
 async function getCategories() {
   return await client.fetch(`
-    *[_type == "category"]{
-      _id,
-      name,
-      slug
-    }
+   *[_type == "category" && !(_id in path("drafts.**"))]{
+  _id,
+  name,
+  slug
+}
   `);
 }
 

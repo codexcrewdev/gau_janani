@@ -1,60 +1,70 @@
 "use client";
 
-
 import { useState } from "react";
+import { useCart } from "../../context/CartContext"; // 🔥 IMPORT
 import "./products.css";
 
 export default function ProductDetails({ product }: any) {
-  const [quantity, setQuantity] = useState(1);
+    const [quantity, setQuantity] = useState(1);
 
-  const increase = () => setQuantity((q) => q + 1);
-  const decrease = () => {
-    if (quantity > 1) setQuantity((q) => q - 1);
-  };
+    const { addToCart } = useCart(); // 🔥 USE CART
 
-  return (
-    <div className="product-details">
+    const increase = () => setQuantity((q) => q + 1);
+    const decrease = () => {
+        if (quantity > 1) setQuantity((q) => q - 1);
+    };
 
-      {/* IMAGE */}
-      <div className="product-details-image">
-        <img src={product.image?.asset?.url} alt={product.name} />
-      </div>
+    return (
+        <div className="product-details">
 
-      <div className="product-details-content">
+            {/* IMAGE */}
+            <div className="product-details-image">
+                <img src={product.image?.asset?.url} alt={product.name} />
+            </div>
 
-        <h1>{product.name}</h1>
+            <div className="product-details-content">
 
-        <p className="price">₹{product.price}</p>
+                <h1>{product.name}</h1>
 
-        <p className="description">{product.description}</p>
+                <p className="price">₹{product.price}</p>
 
-        <div className="quantity-box">
-          <button onClick={decrease}>-</button>
-          <span>{quantity}</span>
-          <button onClick={increase}>+</button>
+                <p className="description">{product.description}</p>
+
+                {/* QUANTITY */}
+                <div className="quantity-box">
+                    <button onClick={decrease}>-</button>
+                    <span>{quantity}</span>
+                    <button onClick={increase}>+</button>
+                </div>
+
+                {/* INGREDIENTS */}
+                {product.ingredients && (
+                    <div className="ingredients">
+                        <h3>Ingredients</h3>
+                        <ul>
+                            {product.ingredients.map((item: string, i: number) => (
+                                <li key={i}>{item}</li>
+                            ))}
+                        </ul>
+                    </div>
+                )}
+
+                <button
+                    className="add-cart-btn"
+                    onClick={() => addToCart(product, quantity)}
+                >
+                    Add to Cart
+                </button>
+                <a
+                    href={`https://wa.me/919663439728?text=Hi I want ${product.name} (Qty: ${quantity})`}
+                    target="_blank"
+                    className="whatsapp-btn"
+                >
+                    Order on WhatsApp
+                </a>
+
+            </div>
+
         </div>
-
-        {product.ingredients && (
-          <div className="ingredients">
-            <h3>Ingredients</h3>
-            <ul>
-              {product.ingredients.map((item: string, i: number) => (
-                <li key={i}>{item}</li>
-              ))}
-            </ul>
-          </div>
-        )}
-
-        <a
-          href={`https://wa.me/919663439728?text=Hi I want ${product.name} (Qty: ${quantity})`}
-          target="_blank"
-          className="whatsapp-btn"
-        >
-          Order on WhatsApp
-        </a>
-
-      </div>
-
-    </div>
-  );
+    );
 }

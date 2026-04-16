@@ -19,11 +19,7 @@ export default function AchievementsPreview() {
 
                 </div>
 
-                {/* <div className="center">
-          <Link href="/achievements" className="view-all">
-            View All Achievements →
-          </Link>
-        </div> */}
+                
 
             </div>
         </section>

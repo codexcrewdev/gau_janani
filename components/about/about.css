@@ -1,138 +1,173 @@
+/* ========================= */
+/* BASE */
+/* ========================= */
+
 .about {
   background: #ffffff;
 }
 
+/* ========================= */
 /* HEADER */
+/* ========================= */
+
 .about-header {
   text-align: center;
-  margin-bottom: 40px;
-  padding-top: 30px;
+  margin-bottom: 50px;
+  padding-top: 40px;
 }
 
 .about-header h1 {
-  font-size: 28px;
-  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
 }
 
 .about-header p {
   font-size: 15px;
   color: #555;
-  padding: 20px 0;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
-/* LAYOUT */
+/* ========================= */
+/* MAIN CONTENT */
+/* ========================= */
+
 .about-content {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 40px;
 }
 
-/* .our-story {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-} */
 /* IMAGE */
 .about-image img {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 16px;
+  display: block;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
 }
 
 /* TEXT */
-.our-story h2 {
-  font-size: 34px;
-  margin-bottom: 10px;
+.about-text {
+  max-width: 650px;
 }
 
 .about-text p {
   font-size: 15px;
-  line-height: 1.7;
-  margin-bottom: 10px;
+  line-height: 1.8;
+  margin-bottom: 14px;
   color: #444;
 }
 
+/* ========================= */
+/* OUR STORY */
+/* ========================= */
+
 .our-story {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 /* HEADING */
 .story-heading {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
   text-align: left;
 }
 
-/* CONTAINER */
+/* underline */
+.story-heading::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin-top: 8px;
+  background: rgba(0,0,0,0.2);
+}
+
+/* LAYOUT */
 .story-container {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 30px;
 }
 
-/* TEXT */
+/* TEXT BLOCK */
+.story-text {
+  max-width: 650px;
+}
+
 .story-text p {
   font-size: 15px;
-  line-height: 1.7;
-  /* margin-bottom: 10px; */
-  padding-bottom: 15px;
+  line-height: 1.8;
+  margin-bottom: 14px;
   color: #444;
 }
 
+/* SECOND BLOCK SPACING */
+.story-text-2 {
+  margin-top: 30px;
+}
+
+/* ========================= */
 /* VIDEO */
+/* ========================= */
+
 .video-container {
-  position: relative;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
+
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
 }
 
 .video-container iframe {
-  position: relative;
   width: 100%;
-  height: 100%;
-  /* top: 100; */
+  height: 250px;
   border: none;
+  display: block;
 }
 
-
-
-/* .story-text {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.story-text p {
-  font-size: 15px;
-  line-height: 1.7;
-  margin-bottom: 10px;
-  color: #444;
-} */
+/* ========================= */
 /* TABLET */
+/* ========================= */
+
 @media (min-width: 768px) {
+
   .about-header h1 {
-    font-size: 36px;
+    font-size: 38px;
   }
 
   .about-header p {
-    font-size: 17px;
+    font-size: 16px;
+  }
+
+  .about-text p,
+  .story-text p {
+    font-size: 16px;
   }
 
   .story-heading {
     font-size: 32px;
   }
 
-  .story-text p {
-    font-size: 17px;
+  .video-container iframe {
+    height: 350px;
   }
 }
 
+/* ========================= */
 /* DESKTOP */
+/* ========================= */
+
 @media (min-width: 1024px) {
+
   .about-content {
     flex-direction: row;
-    gap: 50px;
     align-items: center;
+    gap: 60px;
   }
 
   .about-image {
@@ -143,18 +178,19 @@
     flex: 1;
   }
 
-  .about-text h2 {
-    font-size: 28px;
+  .about-header h1 {
+    font-size: 42px;
   }
 
   .about-text p {
     font-size: 17px;
   }
 
-    .story-container {
+  /* STORY LAYOUT */
+  .story-container {
     flex-direction: row;
     align-items: center;
-    gap: 50px;
+    gap: 60px;
   }
 
   .story-text {
@@ -167,5 +203,13 @@
 
   .story-heading {
     font-size: 36px;
+  }
+
+  .video-container iframe {
+    height: 420px;
+  }
+
+  .story-text p {
+    font-size: 17px;
   }
 }

@@ -41,11 +41,6 @@
   margin-top: 25px;
 }
 
-.view-all {
-  text-decoration: none;
-  color: var(--primary);
-  font-weight: 500;
-}
 
 @media (min-width: 768px) {
   .grid {

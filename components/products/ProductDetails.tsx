@@ -1,6 +1,17 @@
+"use client";
+
+
+import { useState } from "react";
 import "./products.css";
 
 export default function ProductDetails({ product }: any) {
+  const [quantity, setQuantity] = useState(1);
+
+  const increase = () => setQuantity((q) => q + 1);
+  const decrease = () => {
+    if (quantity > 1) setQuantity((q) => q - 1);
+  };
+
   return (
     <div className="product-details">
 
@@ -9,7 +20,6 @@ export default function ProductDetails({ product }: any) {
         <img src={product.image?.asset?.url} alt={product.name} />
       </div>
 
-      {/* CONTENT */}
       <div className="product-details-content">
 
         <h1>{product.name}</h1>
@@ -18,8 +28,13 @@ export default function ProductDetails({ product }: any) {
 
         <p className="description">{product.description}</p>
 
-        {/* INGREDIENTS */}
-        {product.ingredients && product.ingredients.length > 0 && (
+        <div className="quantity-box">
+          <button onClick={decrease}>-</button>
+          <span>{quantity}</span>
+          <button onClick={increase}>+</button>
+        </div>
+
+        {product.ingredients && (
           <div className="ingredients">
             <h3>Ingredients</h3>
             <ul>
@@ -30,9 +45,8 @@ export default function ProductDetails({ product }: any) {
           </div>
         )}
 
-        {/* CTA */}
         <a
-          href={`https://wa.me/919663439728?text=Hi I want to order ${product.name}`}
+          href={`https://wa.me/91XXXXXXXXXX?text=Hi I want ${product.name} (Qty: ${quantity})`}
           target="_blank"
           className="whatsapp-btn"
         >

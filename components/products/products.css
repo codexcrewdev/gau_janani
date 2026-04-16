@@ -23,6 +23,7 @@
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0,0,0,0.05);
   transition: all 0.3s ease;
+  /* width: 80% */
 }
 
 /* HOVER EFFECT */
@@ -117,56 +118,142 @@
   color: white;
 }
 
+/* ========================= */
+/* PRODUCT DETAILS WRAPPER */
+/* ========================= */
 .product-details {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   padding: 20px 0;
 }
 
+/* ========================= */
 /* IMAGE */
+/* ========================= */
 .product-details-image img {
-  width: 60%;
-  border-radius: 16px;
+  width: 70%;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  transition: transform 0.4s ease;
 }
 
+.product-details-image img:hover {
+  transform: scale(1.03);
+}
+
+/* ========================= */
 /* CONTENT */
+/* ========================= */
+.product-details-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .product-details-content h1 {
-  font-size: 24px;
-  margin-bottom: 8px;
-}
-
-.product-details-content .price {
-  font-size: 18px;
+  font-size: 26px;
   font-weight: 600;
-  margin-bottom: 10px;
+  letter-spacing: -0.5px;
 }
 
+/* PRICE */
+.product-details-content .price {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* DESCRIPTION */
 .product-details-content .description {
-  margin-bottom: 15px;
-  color: #555;
-  line-height: 1.6;
+  color: #666;
+  line-height: 1.7;
+  font-size: 15px;
 }
 
+/* ========================= */
+/* QUANTITY */
+/* ========================= */
+.quantity-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0 15px;
+}
+
+/* BUTTON */
+.quantity-box button {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: #f2f2f2;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.25s ease;
+}
+
+/* HOVER */
+.quantity-box button:hover {
+  background: #e5e5e5;
+}
+
+/* CLICK EFFECT */
+.quantity-box button:active {
+  transform: scale(0.9);
+}
+
+/* NUMBER */
+.quantity-box span {
+  font-size: 16px;
+  font-weight: 600;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* ========================= */
 /* INGREDIENTS */
+/* ========================= */
+.ingredients {
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 14px;
+}
+
 .ingredients h3 {
   margin-bottom: 8px;
+  font-size: 16px;
 }
 
 .ingredients ul {
   padding-left: 18px;
-  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.6;
 }
 
-/* CTA */
+/* ========================= */
+/* WHATSAPP BUTTON */
+/* ========================= */
 .whatsapp-btn {
   display: inline-block;
-  padding: 12px 18px;
-  background: #25d366;
-  color: white;
-  border-radius: 8px;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #25d366, #1ebe5d);
+  color: #fff;
+  border-radius: 10px;
   text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-top: 10px;
 }
+
+/* HOVER */
+.whatsapp-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.25);
+}
+
 
 
 /* ========================= */
@@ -179,7 +266,8 @@
 
    .product-details {
     flex-direction: row;
-    gap: 40px;
+    align-items: flex-start;
+    gap: 50px;
   }
 
   .product-details-image {
@@ -189,6 +277,15 @@
   .product-details-content {
     flex: 1;
   }
+
+  .product-details-content h1 {
+    font-size: 30px;
+  }
+
+  .product-details-content .price {
+    font-size: 22px;
+  }
+
 }
 
 /* ========================= */

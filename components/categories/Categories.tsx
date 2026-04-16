@@ -3,17 +3,20 @@ import Link from "next/link";
 import "./categories.css";
 
 async function getCategories() {
-  return await client.fetch(`
-    *[_type == "category"]{
+  return await client.fetch(
+    `*[_type == "category"]{
       _id,
       name,
       slug,
       image{
         asset->{url}
       }
-    }
-  `);
+    }`,
+    {},
+    { cache: "no-store" } // 🔥 ADD THIS HERE
+  );
 }
+
 
 export default async function Categories() {
   const categories = await getCategories();

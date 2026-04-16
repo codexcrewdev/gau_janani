@@ -23,7 +23,7 @@ export default function ProductCard({ product }: any) {
 
           {/* TOP ROW */}
           <div className="action-row">
-            <a href={`/products/${product.slug.current}`} className="view-btn">Details</a>
+            <a href={`/products/${product.slug.current}`} className="view-btn">View Details</a>
 
           <a
             href={`https://wa.me/919663439728?text=Hi I want ${product.name}`}

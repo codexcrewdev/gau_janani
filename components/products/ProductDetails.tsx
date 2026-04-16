@@ -1,3 +1,5 @@
+import "./products.css";
+
 export default function ProductDetails({ product }: any) {
   return (
     <div className="product-details">
@@ -30,7 +32,7 @@ export default function ProductDetails({ product }: any) {
 
         {/* CTA */}
         <a
-          href={`https://wa.me/91XXXXXXXXXX?text=Hi I want to order ${product.name}`}
+          href={`https://wa.me/919663439728?text=Hi I want to order ${product.name}`}
           target="_blank"
           className="whatsapp-btn"
         >

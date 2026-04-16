@@ -3,6 +3,7 @@
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr;
+  padding-bottom: 20px;
 }
 
 .products-heading {

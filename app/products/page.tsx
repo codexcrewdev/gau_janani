@@ -1,6 +1,8 @@
 import { client } from "../../lib/sanity";
 import ProductsList from "../../components/products/ProductsList";
+import CategoryTabs from "../../components/products/CategoryTabs";
 
+// 🔹 Fetch products
 async function getProducts(category?: string) {
   if (category) {
     return await client.fetch(
@@ -30,10 +32,25 @@ async function getProducts(category?: string) {
   `);
 }
 
+// 🔹 Fetch categories (ADD THIS)
+async function getCategories() {
+  return await client.fetch(`
+    *[_type == "category"]{
+      _id,
+      name,
+      slug
+    }
+  `);
+}
+
 export default async function ProductsPage({ searchParams }: any) {
   const category = searchParams?.category;
 
-  const products = await getProducts(category);
+  // 🔥 Fetch BOTH products + categories
+  const [products, categories] = await Promise.all([
+    getProducts(category),
+    getCategories(),
+  ]);
 
   return (
     <section className="section">
@@ -41,11 +58,11 @@ export default async function ProductsPage({ searchParams }: any) {
 
         <h1>Our Products</h1>
 
-        {category && (
-          <p className="active-filter">
-            Showing: {category}
-          </p>
-        )}
+        {/* 🔥 Category Tabs */}
+        <CategoryTabs
+          categories={categories}
+          activeCategory={category}
+        />
 
         <ProductsList products={products} />
 

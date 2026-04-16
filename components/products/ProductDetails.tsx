@@ -46,7 +46,7 @@ export default function ProductDetails({ product }: any) {
         )}
 
         <a
-          href={`https://wa.me/91XXXXXXXXXX?text=Hi I want ${product.name} (Qty: ${quantity})`}
+          href={`https://wa.me/919663439728?text=Hi I want ${product.name} (Qty: ${quantity})`}
           target="_blank"
           className="whatsapp-btn"
         >

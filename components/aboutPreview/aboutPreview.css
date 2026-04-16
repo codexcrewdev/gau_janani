@@ -1,58 +1,126 @@
+/* ========================= */
+/* SECTION */
+/* ========================= */
+
 .about-preview {
   background: white;
-  padding: 60px 0;
+  padding: 70px 0;
 }
 
+/* ========================= */
 /* LAYOUT */
+/* ========================= */
+
 .about-preview-container {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 40px;
 }
 
+/* ========================= */
 /* TEXT */
+/* ========================= */
+
+.about-text {
+  max-width: 600px;
+}
+
 .about-text h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+
+/* subtle underline */
+.about-text h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin-top: 8px;
+  border-radius: 2px;
+  background: rgba(0,0,0,0.2);
 }
 
 .about-text p {
   font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 10px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  color: #444;
 }
 
+/* ========================= */
 /* LINK */
+/* ========================= */
+
 .read-more {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 14px;
   color: var(--primary);
   text-decoration: none;
   font-weight: 500;
+  font-size: 14px;
+  transition: all 0.2s ease;
 }
 
+/* hover */
+.read-more:hover {
+  transform: translateX(4px);
+}
+
+/* ========================= */
 /* IMAGE */
+/* ========================= */
+
+.about-image {
+  width: 100%;
+}
+
 .about-image img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 16px;
+  display: block;
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
 }
 
+/* subtle hover */
+.about-image img:hover {
+  transform: scale(1.02);
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
 @media (min-width: 768px) {
+
   .about-text h2 {
     font-size: 32px;
   }
 
   .about-text p {
-    font-size: 17px;
+    font-size: 16px;
+  }
+
+  .read-more {
+    font-size: 15px;
   }
 }
+
+/* ========================= */
+/* DESKTOP */
+/* ========================= */
 
 @media (min-width: 1024px) {
 
   .about-preview-container {
     flex-direction: row;
     align-items: center;
-    gap: 50px;
+    justify-content: space-between;
+    gap: 60px;
   }
 
   .about-text {
@@ -64,10 +132,10 @@
   }
 
   .about-text h2 {
-    font-size: 36px;
+    font-size: 38px;
   }
 
   .about-text p {
-    font-size: 18px;
+    font-size: 17px;
   }
 }

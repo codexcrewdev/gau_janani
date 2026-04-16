@@ -1,6 +1,11 @@
+"use client";
+
 import "./products.css";
+import { useCart } from "../../context/CartContext";
 
 export default function ProductCard({ product }: any) {
+  const { addToCart } = useCart();
+
   return (
     <div className="product-card">
 
@@ -15,9 +20,10 @@ export default function ProductCard({ product }: any) {
         <p className="price">₹{product.price}</p>
 
         <div className="product-actions">
-          <a href={`/products/${product.slug.current}`} className="view-btn">
-            View Details
-          </a>
+
+          {/* TOP ROW */}
+          <div className="action-row">
+            <a href={`/products/${product.slug.current}`} className="view-btn">Details</a>
 
           <a
             href={`https://wa.me/919663439728?text=Hi I want ${product.name}`}
@@ -26,6 +32,16 @@ export default function ProductCard({ product }: any) {
           >
             Order
           </a>
+          </div>
+
+          {/* FULL WIDTH BUTTON */}
+          <button
+            className="add-cart-btn-card"
+            onClick={() => addToCart(product, 1)}
+          >
+            Add to Cart
+          </button>
+
         </div>
 
       </div>

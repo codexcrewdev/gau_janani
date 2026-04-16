@@ -68,7 +68,7 @@
 }
 
 /* BUTTONS */
-.product-actions {
+.product-actions .action-row {
   display: flex;
   gap: 10px;
 }
@@ -270,6 +270,18 @@
 .add-cart-btn:hover {
   background: #222;
   transform: translateY(-1px);
+}
+
+/* ADD TO CART */
+.add-cart-btn-card {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
 /* ========================= */

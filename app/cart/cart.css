@@ -1,0 +1,155 @@
+/* ========================= */
+/* MOBILE FIRST (DEFAULT) */
+/* ========================= */
+
+.cart-section h1 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* GRID */
+.cart-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ITEM CARD */
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #fafafa;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* IMAGE */
+.cart-image img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* INFO */
+.cart-info {
+  flex: 1;
+}
+
+.cart-info h3 {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.cart-info p {
+  font-size: 13px;
+  color: #666;
+}
+
+/* QUANTITY */
+.cart-qty {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cart-qty button {
+  width: 26px;
+  height: 26px;
+  border: none;
+  background: #eee;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cart-qty span {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* REMOVE */
+.remove-btn {
+  font-size: 12px;
+  color: red;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ========================= */
+/* SUMMARY (MOBILE STICKY) */
+/* ========================= */
+
+.cart-summary {
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+  padding: 15px;
+  border-top: 1px solid #eee;
+  box-shadow: 0 -5px 20px rgba(0,0,0,0.05);
+  border-radius: 12px 12px 0 0;
+}
+
+.cart-summary h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.cart-summary p {
+  font-weight: 600;
+}
+
+/* CTA */
+.checkout-btn {
+  display: block;
+  margin-top: 10px;
+  padding: 12px;
+  background: #25d366;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* ========================= */
+/* DESKTOP ENHANCEMENT */
+/* ========================= */
+
+@media (min-width: 768px) {
+
+  .cart-grid {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .cart-items {
+    flex: 2;
+  }
+
+  .cart-summary {
+    position: static;
+    flex: 1;
+    border-radius: 14px;
+    background: #f5f5f5;
+    box-shadow: none;
+    border: none;
+  }
+
+  .cart-item {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .cart-image img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .cart-info h3 {
+    font-size: 16px;
+  }
+}

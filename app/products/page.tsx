@@ -45,6 +45,7 @@ async function getCategories() {
 }
 
 export default async function ProductsPage({ searchParams }: any) {
+   const params = await searchParams;
   const category = searchParams?.category;
 
   // 🔥 Fetch BOTH products + categories

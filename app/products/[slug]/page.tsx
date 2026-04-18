@@ -1,4 +1,5 @@
 import { client } from "../../../lib/sanity";
+
 import ProductDetails from "../../../components/products/ProductDetails";
 
 async function getProduct(slug: string) {

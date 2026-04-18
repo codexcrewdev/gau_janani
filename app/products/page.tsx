@@ -2,6 +2,56 @@ export const dynamic = "force-dynamic";
 import { client } from "../../lib/sanity";
 import ProductsList from "../../components/products/ProductsList";
 import CategoryTabs from "../../components/products/CategoryTabs";
+import type { Metadata } from "next";
+
+export async function generateMetadata({ params }: any): Promise<Metadata> {
+  const { slug } = await params;
+
+  const product = await client.fetch(
+    `*[_type == "product" && slug.current == $slug][0]{
+      name,
+      description,
+      price,
+      image{asset->{url}}
+    }`,
+    { slug }
+  );
+
+  if (!product) {
+    return {
+      title: "Product Not Found | Janani Farms",
+    };
+  }
+
+  return {
+    title: product.name,
+    description: product.description?.slice(0, 150),
+
+    alternates: {
+      canonical: `/products/${slug}`,
+    },
+
+    openGraph: {
+      title: product.name,
+      description: product.description,
+      url: `/products/${slug}`,
+      images: [
+        {
+          url: product.image?.asset?.url,
+          width: 1200,
+          height: 630,
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: product.name,
+      description: product.description,
+      images: [product.image?.asset?.url],
+    },
+  };
+}
 
 // 🔹 Fetch products
 async function getProducts(category?: string) {

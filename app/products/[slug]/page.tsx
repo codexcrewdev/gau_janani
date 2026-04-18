@@ -24,7 +24,6 @@ export default async function ProductPage({
   // 🔥 THIS IS THE FIX
   const { slug } = await params;
 
-  console.log("SLUG FROM URL:", slug);
 
   if (!slug) return <div>No slug found</div>;
 
